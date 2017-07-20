@@ -1,5 +1,13 @@
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css?family=Poiret+One');
   @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
@@ -8,6 +16,7 @@ div.container {
     width: 100%;
     border: 1px solid white;
 }
+  
   
 
 header, footer {
@@ -57,9 +66,23 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
   }
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: dimgray;
+    border: solid 1px #c3c3c3;
+    font-size: 20px;
+    
+}
+
+#panel {
+    padding: 20px;
+    display: none;
+}
 </style>
 </head>
 <body>
+  
  
        
 
@@ -82,22 +105,26 @@ h3 {
 
 <article>
   <h3>Humbl3 | Xao Thao</h3>
-  <p> In life, everyone is trying to reach their goal if thats in being rich or being a doctor or being what ever. Everyone is secretly trying to succeed to goal without bragging. This site is dedicated to that philosphy. Whether as a student, gangster, father, mother, kid,    </p>
+  <p> In life, everyone is trying to reach their goal if thats in being rich or being a doctor or being what ever. Everyone is secretly trying to succeed to goal. This site is dedicated to that philosphy. Whether as a student, gangster, father, mother, kid, brother, etc...    </p>
   <h2>About Me</h2>
-  <p>A Sacramento Kings fan at heart.Yeah I know the Sacramento Kings aren't as good in the league but thats how I role. Born and still being raised in Sacramento. I am 16 and growing. I am a proud Hmong American discovering my identity. I want to be well known and loved. I like to eat a lot of spicy and sour foods. I have 7 siblings and 2 dogs. I love to watch fantasy movies for example Lord of the Rings(s) and The Hobbit(s). I love to game! Catch me at Counter Strike Global Offensive, League of Legends, Player's Unkown BattleGrounds, and many more. I am an average Hmong kid on the pursuit for higher education.</p>
+  <p>A Sacramento Kings fan at heart.Yeah I know the Sacramento Kings aren't as good in the league but that's how I roll. Born and still being raised in Sacramento. I am 16 and growing. I am a proud Hmong American discovering my identity. I want to be well known and loved. I like to eat a lot of spicy and sour foods. I have 7 siblings and 2 dogs. I love to watch fantasy movies for example Lord of the Rings(s) and The Hobbit(s). I love to game! Catch me at Counter Strike Global Offensive, League of Legends, Player's Unkown BattleGrounds, and much more. I am an average Hmong kid on the pursuit of higher education.</p>
   <p> </p>
  
 </article>
 
-<footer>Humbl3</footer>
+<footer>Humbl3 <div id="flip">Contact Me @</div>
+<div id="panel">
+  @xaoth1@gmail.com         
+  +1 (916)701-0888
+  </div>
+</footer>
   
 
 </div>
+  
 
 </body>
 </html>
-
-
 
 
 
